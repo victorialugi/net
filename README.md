@@ -10,21 +10,22 @@
 - route table `nat-route`: `0.0.0.0/0` → NAT
 - VM `private-vm` только с внутренним IP
 
-Манифесты: `main.tf`, `variables.tf`, `versions.tf`
+Манифесты: [`main.tf`](main.tf), [`variables.tf`](variables.tf), [`versions.tf`](versions.tf)
 
 ## Ресурсы
 
-![output](screenshots/01-output.png)
-![subnets](screenshots/02-subnets.png)
-![routes](screenshots/03-routes.png)
-![instances](screenshots/04-instances.png)
+![1.png](https://github.com/victorialugi/net/blob/main/1.png)
+![2.png](https://github.com/victorialugi/net/blob/main/2.png)
+
 
 ## Интернет с public-vm
 
-![public ping](screenshots/05-public.png)
+![3.png](https://github.com/victorialugi/net/blob/main/3.png)
+
 
 ## Интернет с private-vm через public-vm
 
 `curl ifconfig.me` показывает публичный IP NAT-инстанса.
 
-![private ping](screenshots/06-private.png)
+![4.png](https://github.com/victorialugi/net/blob/main/4.png)
+
